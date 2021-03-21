@@ -1,0 +1,173 @@
+* {
+    font-family: "Arial", sans-serif;
+    font-size: 21px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+    background-image: url("header-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+header h1 {
+    font: 90px "opensans-bold", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 90px;
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+header h2 {
+    color: #a8a8a8;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    width: 70%;
+}
+
+header h2 span {
+    color: #fff;
+    font: inherit;
+}
+
+.aboutme button {
+    font-size: 30px;
+    background-color: #444;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+    border-radius: 3px;
+}
+
+.aboutme {
+    display: flex;
+    background-color: #2B2B2B;
+    margin: -1px;
+    padding: 0;
+}
+
+.aboutme h2 {
+    font-size: 40px;
+    color: #fff;
+    float: left;
+    padding: 0 0 0 40px;
+    width: 100%;
+}
+
+.aboutme a {
+    float: right;
+}
+
+.aboutme ul {
+    margin: 0;
+}
+
+.aboutme p,
+dl {
+    color: #838C95;
+    display: block;
+}
+
+.aboutme p {
+    color: #838C95;
+    display: block;
+    line-height: 30px;
+    max-width: 900px;
+}
+
+.profile-pic {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
+    padding: -2vh -2vh -2vh -2vh;
+}
+
+.resume,
+.skills {
+    display: flex;
+    background-color: #fff;
+    font-size: 2vh;
+    color: #A8A8A8;
+    margin: 0vh;
+    padding: 0;
+}
+
+.resume h2,
+.skills h2 {
+    font-size: 30px;
+}
+
+.resume dl {
+    padding: 0px
+}
+
+.resume dt {
+    color: #000000;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline
+}
+
+.course .jobtitle {
+    font: 2vh;
+}
+
+.skills dt {
+    margin: 4vh;
+}
+
+.skills dd {
+    height: 6vh;
+    border-radius: 3px;
+    background-color: #ccc;
+}
+
+.skills .bar {
+    background-color: #2B2B2B;
+    height: 6vh;
+    font-size: 5vh;
+    border-radius: 3px;
+}
+
+.s20 {
+    width: 20%;
+}
+
+.s50 {
+    width: 50%;
+}
+
+.s60 {
+    width: 60%;
+}
+
+.s80 {
+    width: 80%;
+}
+
+.s70 {
+    width: 70%;
+}
+
+.s90 {
+    width: 90%;
+}

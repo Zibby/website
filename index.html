@@ -2,68 +2,143 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="site.css" &lt;="" ead="" />
+    <title>Zibby Mofrad</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Zibby Mofrad's CV Website">
+    <meta name="author" content="Zibby Mofrad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/site.css">
+    <link rel="stylesheet" type="text/css" href="/assets/media.css">
+
 </head>
 
 <body>
-  <title>Zibby Mofrad</title>
-  <div class="head-banner">
-    <div class="headname">
-      Zibby Mofrad
-    </div>
-    <div class="headtext">
-      I'm a Portsmouth based
-      <span>Sysadmin</span>, <span>Infrastucture Engineer</span> and
-      <span>DevOps Engineer</span> passionate about working with opensouce
-      technologies.
-    </div>
-  </div>
-  <div class="aboutme">
-    <img class="profile-pic" src="assets/profilepic.jpg" alt="handsome man" />
-    <div class="aboutmetitle">About me</div>
-    <div style="color:#838C95">
-      I have been working with Linux for 10 years now, from tinkering in my
-      parents spare room with old PCs running apache and samba, to now
-      working on Petabyte clusters and highly avaliable microservice backed
-      systems. Primarily scripting in ruby but also comfortable with BASH
-      and a little golang. Currently focused on delivering services with AWS
-      SAM and Fargate.
-    </div>
-    <div class="aboutmetitle" , style="margin: 12px 0 12px 0;">
-      Contact Details
-      <div style="float:right; width:25%">
-        <a href="https://zibbytechnology.ddns.net/home/_about/cv.pdf" download=""><button class="button">Download
-            Resume</button></a>
-      </div>
-    </div>
-    <div style="color:#838C95; float:left; width:25%; margin: 0 0 12px 0">Email: zibby@zibby.technology</div>
-  </div>
-  <div class="resume">
-    <div class="education">
-      <div class="resumetitle">
-        Education
-      </div>
-      <div class="uni">University of Sussex</div>
-      <div class="course">Bsc Physics • 2013</div>
-    </div>
-      <div class="work">
-        <div class="resumetitle", style="height: 400px;">
-          Work
+    <header>
+        <h1>Zibby Mofrad</h1>
+        <h2>I'm a Portsmouth based <span>Sysadmin</span>, <span>Infrastucture Engineer</span> and<span> DevOps Engineer</span> passionate about working with opensouce technologies.</h2>
+    </header>
+
+    <section class="aboutme row">
+        <div class="col-3 hide-mob"></div>
+        <div class="col-9 col-s-12">
+            <h2>About me</h2>
+            <img class="profile-pic" src="assets/profilepic.jpg" alt="handsome man" ALIGN="right" />
+            <p>I have been working with Linux for 10 years now, from tinkering in my parents spare room with old PCs running apache and samba, to now working on Petabyte clusters and highly avaliable microservice backed systems. Primarily scripting in ruby
+                but also comfortable with BASH and a little golang. Currently focused on delivering services with AWS SAM and Fargate.</p>
+            <a href="/assets/cv.pdf" download="">
+                <button>Download Resume</button></a>
         </div>
+        <div class="col-3 hide-mob"></div>
+    </section>
+    <section class="aboutme row">
+        <div class="col-3 hide-mob"></div>
+        <div class="col-9 col-s-12">
+            <h2>Contact Details</h2>
+            <dl>
+                <dt>Email:<dd>zibby@zibby.technology</dd></dt>
+                <dt>Github:<dd>https://github.com/zibby</dd>
+                <dt>Matrix:<dd>@zibby:matrix.zibby.technology</dd></dt>
+                <dt>Mastodon:<dd>@zibby@mastodon.online</dd></dt>
+                <dt>Twitter:<dd>https://twitter.com/mattmofrad</dd></dt>
+                <dt>Keybase:<dd>https://keybase.io/zibbymofrad</dd>
+            </dl>
+        </div>
+        <div class="col-3 hide-mob"></div>
+    </section>
 
-          <div class="jobtitle">Senior Devops Engineer</div>
-          <div class="job">Alliants</div>
-          <span style="font: 0.5em 'opensans-bold', sans-serif;">
-            Working with a multitude of development teams to deliver a quality service to a range of projects.
-          </span>
-          <div class="jobtitle">Senior Devops Engineer</div>
-          <div class="job">Alliants</div>
+
+    <section class="resume row">
+        <div class="col-3 hide-mob"><h2>Work</h2></div>
+            <div class="col-9 hide-mob"></div>
+            <div class="col-3 hide-mob"></div>
+    </section>
+            <section class="resume row">
+            <div class="col-3 hide-mob"></div>
+            <div class="col-9 col-s-12">
+                <dl>
+                <dt>Mixlr</dt>
+                <dd>DevOps Engineer • 2021-Current</dd>
+                <p>Working with ansible and terraform in AWS to remove single points of failure and improve end user experiance</p>
+                <dt>Alliants</dt>
+                <dd>Senior DevOps Engineer • 2019-2021</dd>
+                <p>Working with chef and terraform in AWS on a ECS/EC2 hybrid stack with supporting lambda functions</p>
+                <dt>Snowflake</dt>
+                <dd>Sysadmin • 2018-2019</dd>
+                <p>Maintaining and supporting the development k8s stack and working to improve virtualisation platform</p>
+                <dt>LiveLink</dt>
+                <dd>Infrastucture Engineer • 2017-2018</dd>
+                <p>Writing chef and glue code to deploy zabbix monitors for managing KPIs</p>
+            </dl>
+        </div>
+        <div class="col-3 hide-mob"></div>
+    </section>
 
 
-      </div>
-    </div>
-  </div>
+    <section class="resume row">
+        <div class="col-3 hide-mob">
+            <h2>Education</h2>
+        </div>
+        <div class="col-9 hide-mob"></div>
+        <div class="col-3 hide-mob"></div>
+    </section>
+    <section class="resume row">
+        <div class="col-3 hide-mob"></div>
+        <div class="col-9 col-s-12">
+            <dl>
+                <dt>Sussex University</dt>
+                <dd>Bsc Physics • 2013</dd>
+            </dl>
+        </div>
+        <div class="col-3 hide-mob"></div>
+    </section>
+
+    <section class="skills row" style="padding-bottom: 5vh;">
+        <div class="col-3 hide-mob">
+            <h2>Skills</h2>
+        </div>
+        <div class="col-9 col-s-12">
+            <dl>
+                <dt>Ruby</dt>
+                <dd>
+                    <div class="bar s70"></div>
+                </dd>
+                <dt>Ansible</dt>
+                <dd>
+                    <div class="bar s80"></div>
+                </dd>
+                <dt>AWS</dt>
+                <dd>
+                    <div class="bar s80"></div>
+                </dd>
+                <dt>Chef</dt>
+                <dd>
+                    <div class="bar s80"></div>
+                </dd>
+                <dt>Bash</dt>
+                <dd>
+                    <div class="bar s60"></div>
+                </dd>
+                <dt>Docker</dt>
+                <dd>
+                    <div class="bar s80"></div>
+                </dd>
+                <dt>Linux</dt>
+                <dd>
+                    <div class="bar s90"></div>
+                </dd>
+                <dt>Go</dt>
+                <dd>
+                    <div class="bar s50"></div>
+                </dd>
+                <dt>Badminton</dt>
+                <dd>
+                    <div class="bar s90"></div>
+                </dd>
+            </dl>
+        </div>
+        <div class="col-3 hide-mob"></div>
+    </section>
+
 </body>
 
 </html>
