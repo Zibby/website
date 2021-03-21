@@ -1,0 +1,29 @@
+version: '3'
+services:
+  website:
+    container_name: website
+    image: nginx
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.website.rule=Host(`zibby.technology`,`website.zibby.technology`, `www.zibby.technology`)
+      - traefik.http.routers.website.entrypoints=web-secure
+      - traefik.http.routers.website.tls.certresolver=le
+      - traefik.http.routers.website.middlewares=secured@file
+      - traefik.http.middlewares.website.redirectscheme.scheme=https
+      - traefik.frontend.headers.STSSeconds=31536000
+      - traefik.frontend.headers.STSIncludeSubdomains=true
+      - traefik.frontend.headers.STSPreload=true
+    volumes:
+      - /opt/website/:/usr/share/nginx/html:ro
+    networks:
+      - traefik_default
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://10.11.0.6:3100/loki/api/v1/push"
+        loki-retries: "5"
+        loki-batch-size: "400"
+networks:
+  traefik_default:
+    external: true
