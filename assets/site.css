@@ -87,7 +87,6 @@ h2 {
   font-size: clamp(1.5rem, 7vw, 25px);
   width: 100%;
   clear: both;
-  margin-left: -5%;
 }
 
 h4 {
@@ -241,4 +240,3 @@ header span:after {
     content: "Cloud Engineer";
   }
 }
-
