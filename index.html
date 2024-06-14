@@ -2,124 +2,70 @@
 <html>
 
 <head>
-  <title>Zibby Mofrad</title>
+  <title>Zibbys Page</title>
   <meta charset="utf-8">
-  <meta name="description" content="Zibby Mofrad's CV Website">
+  <meta name="description" content="Zibby Mofrad's Website">
   <meta name="author" content="Zibby Mofrad">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
   <link rel="stylesheet" type="text/css" href="/assets/site.css">
   <link rel="me" href="https://mastodon.online/@zibby"></a>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <script type="importmap">
+        {
+          "imports": {
+            "@fullcalendar/core": "https://cdn.skypack.dev/@fullcalendar/core@6.1.14",
+            "@fullcalendar/list": "https://cdn.skypack.dev/@fullcalendar/list@6.1.14",
+            "@fullcalendar/daygrid": "https://cdn.skypack.dev/@fullcalendar/daygrid@6.1.14",
+            "@fullcalendar/icalendar": "https://cdn.skypack.dev/@fullcalendar/icalendar@6.1.14",
+            "@fullcalendar/timegrid": "https://cdn.skypack.dev/@fullcalendar/timegrid@6.1.14"
+          }
+        }
+  </script>
+    <script type='module'>
+      import { Calendar } from '@fullcalendar/core'
+      import dayGridPlugin from '@fullcalendar/daygrid'
+      import iCalendarPlugin from '@fullcalendar/icalendar'
+      import listPlugin from '@fullcalendar/list';
+      import timeGridPlugin from '@fullcalendar/timegrid'
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new Calendar(calendarEl, {
+          plugins: [dayGridPlugin, iCalendarPlugin,timeGridPlugin, listPlugin],
+          initialView: 'timeGridWeek',
+          nowIndicator: true,
+          eventSources: [
+            {
+              url: 'https://mail.zibby.technology/SOGo/dav/public/zibby@zibby.technology/Calendar/48-630DCE00-23-4C29B800.ics',
+              color: 'red',
+              format: 'ics'
+            },
+            {
+              url: 'https://mail.zibby.technology/SOGo/dav/public/zibby@zibby.technology/Calendar/personal.ics',
+              color: 'blue',
+              format: 'ics'
+            }
+          ],
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+          }
+        })
+        calendar.render()
+      })
+    </script>
 </head>
 
-<body>
-  <header>
-    <h1>Zibby Mofrad</h1>
-    <!-- <div class=animatedjobs></div> -->
-    <h2>I'm a Portsmouth based </h2>
-    <span></span>
-    <h2>passionate about working with opensouce technologies.<h2>
-        <a href="#aboutme">
-          <div class="scroll-down"></div>
-        </a>
 
-  </header>
+<body id="">
+  <h1><a href="/">Home</a></h1>
 
-  <section id="aboutme">
-    <div class="squeeze">
-      <h2>About me</h2>
-      <img class="profile-pic" src="assets/profilepic.webp" alt="handsome man" ALIGN="right" />
-      <p>I have been working with Linux for 10 years now, from tinkering in my parents spare room with old PCs running
-        apache and samba, to now working on Petabyte clusters and highly avaliable microservice backed systems.
-        Primarily scripting in ruby
-        but also comfortable with BASH and a little golang. Currently focused on delivering services with AWS SAM and
-        Fargate.</p>
-      <a href="https://github.com/Zibby/cv/releases/latest/download/cv.pdf">
-        <button>Download Resume</button></a>
-
-      <h2>Contact Details</h2>
-      <dl>
-        <dt>Email:
-        <dd>zibby@zibby.technology</dd>
-        </dt>
-        <dt>Github:
-        <dd>github.com/zibby</dd>
-        <dt>Linkedin</dt>
-        <dd>linkedin.com/in/mattmofrad/</dd>
-      </dl>
-    </div>
-  </section>
-
-  <section id="resume">
-    <div class="squeeze">
-      <h2>Work</h2>
-      <h4>Mixlr • DevOps Engineer</h4>
-      <p>Working with ansible and terraform in AWS to remove single points of failure and improve end user
-        experiance</p>
-      <h4>Alliants • Senior DevOps Engineer • 2019-2021</h4>
-      <p>Working with chef and terraform in AWS on a ECS/EC2 hybrid stack with supporting lambda functions</p>
-      <h4>Snowflake • Sysadmin • 2018-2019</h4>
-      <p>Maintaining and supporting the development k8s stack and working to improve virtualisation platform</p>
-      <h4>LiveLink • Infrastucture Engineer • 2017-2018</h4>
-      <p>Writing chef and glue code to deploy zabbix monitors for managing KPIs</p>
-    </div>
-
-  </section>
-
-  <hr class="separator--line">
-
-  <section id="education">
-    <div class="squeeze">
-      <h2>Education</h2>
-      <h4>BSc Physics</h4>
-      <p>University Sussex • 2:2 • 2013</p>
-  </section>
-
-  <hr class="separator--line">
-
-  <section id="education">
-    <div class="squeeze skills">
-      <h2>Skills</h2>
-      <dl>
-        <dt>Ruby</dt>
-        <dd>
-          <div class="bar s70"></div>
-        </dd>
-        <dt>Ansible</dt>
-        <dd>
-          <div class="bar s80"></div>
-        </dd>
-        <dt>AWS</dt>
-        <dd>
-          <div class="bar s80"></div>
-        </dd>
-        <dt>Chef</dt>
-        <dd>
-          <div class="bar s80"></div>
-        </dd>
-        <dt>Bash</dt>
-        <dd>
-          <div class="bar s60"></div>
-        </dd>
-        <dt>Docker</dt>
-        <dd>
-          <div class="bar s80"></div>
-        </dd>
-        <dt>Linux</dt>
-        <dd>
-          <div class="bar s90"></div>
-        </dd>
-        <dt>Go</dt>
-        <dd>
-          <div class="bar s50"></div>
-        </dd>
-        <dt>Badminton</dt>
-        <dd>
-          <div class="bar s90"></div>
-        </dd>
-      </dl>
-      <hr class="separator--line">
-
-  </section>
-</body>
-
+  <button hx-get="assets/cancer-cal.html" hx-target="#content" hx-swap="outerHTML">Cancer Cal</button>
+  <button hx-get="assets/drugs-cal.html" hx-target="#content" hx-swap="outerHTML">Drugs Cal</button>
+  <div id="content">
+    <div id="calendar"></div>
+  </div>
 </html>
