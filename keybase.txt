@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/zibbymofrad
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zibby.technology
+  * I am zibbymofrad (https://keybase.io/zibbymofrad) on keybase.
+  * I have a public key ASBOQ4k2F5TWpMbXRUSZ8gAg2A4EFkVyI65fGyUUewgT3Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a6ea27256f5ab2d788bd0d47308a67a883fa548e6d7341f4f26abb90de0a965e0a",
+      "host": "keybase.io",
+      "kid": "01204e4389361794d6a4c6d7454499f20020d80e0416457223ae5f1b25147b0813dd0a",
+      "uid": "3a41db9ef35783ad0ba0c62542f90c19",
+      "username": "zibbymofrad"
+    },
+    "merkle_root": {
+      "ctime": 1609108848,
+      "hash": "c7d89c5e00383a3d3a306600a7106173437f37573264ba171c7884fd7d7870e13094d59f8739321ae89e60b9a9ca9dc329bb43eea8cacc4c629aae17f5d2e40f",
+      "hash_meta": "8ccca7d8f83ddb0d2acfeaff4ceb4742f5939bf0f5c14abdc7e58b562780a358",
+      "seqno": 18521597
+    },
+    "service": {
+      "entropy": "oeyZDZNqN08YdYPzcnlPHWuY",
+      "hostname": "zibby.technology",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1609108891,
+  "expire_in": 504576000,
+  "prev": "dcf9fbd800d513a8de30baf540580f4480a84b1ee3675b8163fc6e722caeeca4",
+  "seqno": 45,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTkOJNheU1qTG10VEmfIAINgOBBZFciOuXxslFHsIE90Kp3BheWxvYWTESpcCLcQg3Pn72ADVE6jeMLr1QFgPRICoSx7jZ1uBY/xuciyu7KTEINZe3rJZgPdBR0tBtN2l+6fWcB/O8pz/JTRUMoN6HpA/AgHCo3NpZ8RAJ8XE+QCAVDE6LI4N7S+ZUPBkO0ei1XVZ1TJiQm/xK1FQc/H1qp9Zdb5ZZE2pPSBEMkbpNB9HVPfOVQ9zjJ2JAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKMr4kJZEw/JNDMP1raJDqu6UMcglMa52M8ALnqkwoM2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zibbymofrad
+
+==================================================================
