@@ -27,7 +27,7 @@
   --rosewater: #f5e0dc;
 
   /* --fc-today-bg-color: var(--rosewater); */
-  --fc-list-event-hover-bg-color: var(--sapphire);
+  --fc-list-event-hover-bg-color: var(--overlay2);
   --fc-today-bg-color: var(--overlay1);
   --fc-page-bg-color: var(--surface0);
   --fc-highlight-color: var(--surface1);
