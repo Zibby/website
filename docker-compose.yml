@@ -1,9 +1,11 @@
-version: '3'
+version: "3"
 services:
   website:
     container_name: website
     image: nginx
     restart: always
+    ports:
+      - 8080:80
     labels:
       - traefik.enable=true
       - traefik.http.routers.website.rule=Host(`zibby.technology`,`website.zibby.technology`, `www.zibby.technology`)
@@ -15,7 +17,9 @@ services:
       - traefik.frontend.headers.STSIncludeSubdomains=true
       - traefik.frontend.headers.STSPreload=true
     volumes:
-      - /opt/website/:/usr/share/nginx/html:ro
+      - ./content:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
     networks:
       - traefik_default
     # logging:
