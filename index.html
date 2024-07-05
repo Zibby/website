@@ -33,8 +33,9 @@
         const calendarEl = document.getElementById("calendar");
         const calendar = new Calendar(calendarEl, {
           plugins: [dayGridPlugin, iCalendarPlugin, timeGridPlugin, listPlugin],
-          initialView: "listWeek",
+          initialView: "listMonth",
           navLinks: true,
+          progressiveEventRendering: true,
           nowIndicator: true,
           eventSources: [
             {
@@ -51,7 +52,7 @@
           headerToolbar: {
             left: "prev,next today",
             center: "title",
-            right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+            right: "dayGridMonth,timeGridWeek,timeGridDay",
           },
         });
         calendar.render();
