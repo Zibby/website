@@ -33,12 +33,38 @@
   --fc-highlight-color: var(--surface1);
 }
 
+.styled-table {
+  border-collapse: collapse;
+  border: 1px solid var(--overlay2);
+  margin: 25px 0;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid var(--overlay2);
+  padding: 10px 10px;
+}
+
+.styled-table tr th {
+  background-color: var(--surface0);
+  text-align: left;
+}
+
+.styled-table tr:nth-child(odd) td {
+  background: var(--surface1);
+}
+
+.styled-table tr:nth-child(even) td {
+  background: var(--surface2);
+}
+
 body {
   background: var(--base);
   color: var(--text);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: sans-serif;
 }
 
 .topnav {
