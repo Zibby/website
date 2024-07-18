@@ -26,36 +26,20 @@
   --flamingo: #f2cdcd;
   --rosewater: #f5e0dc;
 
-  /* --fc-today-bg-color: var(--rosewater); */
-  --fc-list-event-hover-bg-color: var(--overlay2);
-  --fc-today-bg-color: var(--overlay1);
-  --fc-page-bg-color: var(--surface0);
   --fc-highlight-color: var(--surface1);
+  --fc-list-event-hover-bg-color: var(--overlay2);
+  --fc-now-indicator-color: var(--red);
+  --fc-page-bg-color: var(--surface0);
+  --fc-today-bg-color: var(--base);
 }
 
-.styled-table {
-  border-collapse: collapse;
-  border: 1px solid var(--overlay2);
-  margin: 25px 0;
+.fc-dayGridMonth-view .fc-day-today {
+  --fc-today-bg-color: var(--blue);
+  color: var(--surface1);
 }
 
-.styled-table th,
-.styled-table td {
-  border: 1px solid var(--overlay2);
-  padding: 10px 10px;
-}
-
-.styled-table tr th {
-  background-color: var(--surface0);
-  text-align: left;
-}
-
-.styled-table tr:nth-child(odd) td {
-  background: var(--surface1);
-}
-
-.styled-table tr:nth-child(even) td {
-  background: var(--surface2);
+.fc-timeGridWeek-view {
+  --fc-today-bg-color: var(--overlay1);
 }
 
 body {
@@ -90,4 +74,29 @@ body {
 .topnav a.active {
   background-color: var(--blue);
   color: white;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  border: 1px solid var(--overlay2);
+  margin: 25px 0;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid var(--overlay2);
+  padding: 10px 10px;
+}
+
+.styled-table tr th {
+  background-color: var(--surface0);
+  text-align: left;
+}
+
+.styled-table tr:nth-child(odd) td {
+  background: var(--surface1);
+}
+
+.styled-table tr:nth-child(even) td {
+  background: var(--surface2);
 }
