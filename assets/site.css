@@ -55,6 +55,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 .topnav a {
@@ -69,6 +70,7 @@ body {
 .topnav a:hover {
   background-color: var(--sky);
   color: black;
+  border-radius: 10px;
 }
 
 .topnav a.active {
