@@ -28,9 +28,14 @@
 
   --fc-highlight-color: var(--surface1);
   --fc-list-event-hover-bg-color: var(--overlay2);
+  --fc-neutral-bg-color: var(--surface0);
   --fc-now-indicator-color: var(--red);
   --fc-page-bg-color: var(--surface0);
   --fc-today-bg-color: var(--base);
+}
+
+.fc-theme-standard .fc-list-day-cushion {
+  background-color: var(--surface0);
 }
 
 .fc-dayGridMonth-view .fc-day-today {
