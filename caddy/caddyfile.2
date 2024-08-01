@@ -1,0 +1,10 @@
+log {
+  level DEBUG
+}
+
+
+reverse_proxy /cal1 https://mail.zibby.technology/SOGo/dav/public/zibby@zibby.technology/Calendar/personal.ics
+
+root * /usr/share/caddy
+file_server
+
